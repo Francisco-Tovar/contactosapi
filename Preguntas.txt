@@ -1,0 +1,16 @@
+PREGUNTAS
+a. Cuál es la diferencia en la práctica entre @Controller y @RestController?
+@controller es la anotacion para marcar como controlador de spring mvc pero @RestController es mas que eso porque aparte de las funcionalidades de controller tambien incluye las de @responseBody
+b. Cuál es mejor usar en qué casos?
+- tecnicamente seria mas apto utilizar @RestController solo cuando se va a implementar una Restful Api
+c. Por qué en el findAll no se especifica el URI para la operación?
+  - porque no necesita un identificador, siempre trae todo lo que hay
+d. Qué obtiene si trata de borrar 2 veces un recurso?
+  - Status 404 not found, no encuentra el recurso
+e. Comente la anotación de PutMapping del método que hace el update. 
+    Reinicie la aplicación.    Observe que pasa si lo trata de hacer.
+  - Status 405 - Method not allowed
+f. Rehabilite la anotación en PutMapping. 
+   Pero ahora cambie el URL de POSTMAN para que apunte directamente a la colección/contacts. 
+¿Qué error recibe?
+  - Status 405 - Method not allowed
